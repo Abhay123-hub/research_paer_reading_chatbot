@@ -9,8 +9,7 @@ from langchain.prompts import ChatPromptTemplate
 import time
 
 # Set up OpenAI API key
-os.environ["OPENAI_API_KEY"] = "sk-DOrw24IdY647dNM69A2fBHpP602RkJUw2qGqoyQz1lT3BlbkFJYvUk98FHHMbIqw2C0Fxu41KKzNBCX9N7xaJpw4RwMA"
-
+os.environ["OPENAI_API_KEY"] = "enter your openai api"
 # Initialize session state for API wrappers and prompts
 if "vector" not in st.session_state:
     st.session_state.api_wrapper_wiki = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=200)
